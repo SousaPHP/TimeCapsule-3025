@@ -1,24 +1,31 @@
 body{
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #F7F7FC;
 }
 /*Header*/
 header {
-    background-color: aquamarine;
+    background-color: #4E4B66;
+    padding: 20px 0px;
 }
 nav ul{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    gap: 40px;
     padding: 10px;
+    
 }
 nav a {
     font-weight: bold;
-    color: #333;
+    color: #A0A3BD;
+    padding: 10px;
+    transition:0.2s;
+    border-radius: 8px;
 
 }
 nav a:hover {
-    color: #007BFF;
+    background: rgb(169, 150, 255, 0.2);
+    color:white;
+    border-radius: 8px;
 }
 /* Geral das Sections */
 section {
@@ -33,4 +40,12 @@ h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
+}
+footer{
+    padding: 20px;
+    background-color: #4E4B66;
+    justify-items: center;
+}
+footer nav ul{
+    gap: 5px;
 }
