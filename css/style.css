@@ -5,14 +5,14 @@ body{
 /*Header*/
 header {
     background-color: #4E4B66;
-    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
 }
 nav ul{
     display: flex;
     justify-content: center;
     gap: 40px;
     padding: 10px;
-    
 }
 nav a {
     font-weight: bold;
@@ -29,23 +29,139 @@ nav a:hover {
 }
 /* Geral das Sections */
 section {
-    padding: 20px;
+    padding: 20px 10rem;
+    justify-items: center;
+    background-color: #A0A3BD;
 }
+#inicio{
+    display: flex;
+    padding-top: 50px;
+    background-color: #a5a9c7;
+}
+#sala-02{
+    background-color: #a5a9c7;
+}
+#sala-04{
+    background-color: #a5a9c7;
+}
+#titulo{
+    align-content: center;
+}
+.img-tela{
+    width: 24rem;
+    height: 24rem;
+}
+
 h1 {
-    font-size: 36px;
+    font-size: 5rem;
     color: #333;
     margin-bottom: 20px;
+    
 }
 h2 {
-    font-size: 24px;
+    font-size: 45px;
     color: #333;
     margin-bottom: 10px;
 }
+/* galeria */
+.quadro-images{
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    flex: 1 1 48%;
+    padding: 10px;
+    
+}
+.raiva .responsive {
+    flex: 0 0 calc(50% - 5px); 
+    box-sizing: border-box;
+}
+.quadrado{
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px;
+    
+}
+.raiva{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.quadro-images p{
+    padding: 5px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+    transition: transform 0.5s;
+  }
+  div.gallery:hover {
+    border: 1px solid #777;
+    transform: scale(1.1);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  /* Footer*/
 footer{
     padding: 20px;
     background-color: #4E4B66;
     justify-items: center;
 }
+footer p{
+    color: #F7F7FC;
+    padding: 10px;
+}
 footer nav ul{
     gap: 5px;
+}
+
+
+@media only screen and (max-width: 913px) {
+    #inicio img{
+        width: 50%;
+        height: 50%;
+      }
+      h1{
+        font-size:50px;
+      }
+}
+@media only screen and (max-width: 1060px) {
+    section{
+        padding: 10%;
+      }
+}
+@media only screen and (max-width: 600px) {
+    #inicio{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  h1{
+    font-size:50px;
+  }
+  #inicio img{
+    width: 100%;
+    height: 100%;
+  }
+  section{
+    padding: 10%;
+  }
+  nav ul{
+    gap:0px;
+  }
 }
