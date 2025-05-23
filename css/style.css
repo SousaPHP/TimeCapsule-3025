@@ -63,6 +63,9 @@ h2 {
     color: #333;
     margin-bottom: 10px;
 }
+.gallery img {
+    height: 200px!important;
+    }
 /* galeria */
 .quadro-images{
     margin-top: 10px;
@@ -95,7 +98,7 @@ div.gallery {
   }
   div.gallery:hover {
     border: 1px solid #777;
-    transform: scale(1.1);
+    transform: scale(1.03);
   }
   
   div.gallery img {
@@ -145,6 +148,9 @@ footer nav ul{
     section{
         padding: 10%;
       }
+      .gallery img {
+        height: 130px!important;
+        }
 }
 @media only screen and (max-width: 600px) {
     #inicio{
